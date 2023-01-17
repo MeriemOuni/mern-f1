@@ -1,0 +1,28 @@
+{
+	"name": "mern-app-f1",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"back": "nodemon server",
+		"front": "cd client && npm start",
+		"dev": "concurrently \"npm run front\" \"npm run back\""
+	},
+	"keywords": [
+		"node",
+		"express",
+		"mongoose",
+		"mongodb"
+	],
+	"author": "meriem",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.18.2",
+		"mongoose": "^6.8.3"
+	},
+	"devDependencies": {
+		"concurrently": "^7.6.0",
+		"dotenv": "^16.0.3",
+		"nodemon": "^2.0.20"
+	}
+}
